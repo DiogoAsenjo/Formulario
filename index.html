@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário</title>
+  </head>
+  <body>
+    <form action="/site-que-recebe-os-dados" method="post ou get">
+      <div> <!--Precisa colocar div em cada campo? Precisa colocar alguma classe?-->
+        <h1>FORMULÁRIO DE INSCRIÇÃO</h1>
+        <hr>
+      </div>
+      <div>
+        <label for="nome">Nome</label> <input type="text" name="nome_usuario" id="nome">
+        <!--Por que label e não <p>? Precisa colocar o name e id em todas as categorias? Pra que serve isso?-->
+      </div>
+      <div>
+        <label for="genero">Gênero</label> 
+        <input type="radio" name="sexo_usuario" id="genero" value="Masculino">Masculino <br>
+        <input type="radio" name="sexo_usuario" id="genero" value="Feminino">Feminino <br>
+        <input type="radio" name="sexo_usuario" id="genero" value="Outros">Outros <br>
+        <!--Essas opções não ficaram alinhadas, pelo que entendi isso eu resolvo no CSS, correto?-->
+      </div>
+      <div>
+        <label for="dn">Data de nascimento</label> <input type="date" name="dn_usuario" id="dn">
+      </div>
+      <div>
+        <label for="endereço">Endereço</label> <input type="text" name="endereço_usuario" id="endereço"> 
+      </div>
+      <div>
+        <label for="email">E-mail</label> <input type="email" name="email_usuario" id="email">
+      </div>
+      <div>
+        <label for="celular">Telefone</label> <input type="tel" name="telefone_usuario" id="telefone" placeholder="(__)____-____">
+        <!--Aqui, eu coloquei o placeholder, mas quando eu vou digitar não mantém a formatação, como faço isso? Não sabia nem como jogar no Google essa pergunta rs-->
+      </div>
+      <div>
+        <label for="pagamento">Forma de pagamento</label> 
+        <input type="radio" name="pagamento_usuario" id="pagamento" value="À vista">À vista <br>
+        <input type="radio" name="pagamento_usuario" id="pagamento" value="Parcelado">Parcelado <br>
+      </div>
+      <div>
+        <label for="parcelas">Quantidade de parcelas</label> <input type="number" name="parcelas_usuario" id="parcelas" min="1" max="12">
+      </div>
+      <div class="button"> <!--Aqui eu joguei classe porque nos sites que estava vendo estava assim... Precisa? Isso vai influenciar no CSS né?-->
+        <input type="submit" name="enviar" value="Enviar">
+        <!--Aqui eu criei um input de submit, poderia ter feito um botão? Tipo abaixo, qual a diferença?-->
+        <button type="submit">Enviar</button>
+      </div>
+    </form
+  </body>
+</html>
